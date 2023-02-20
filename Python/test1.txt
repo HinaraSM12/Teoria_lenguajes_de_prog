@@ -1,0 +1,45 @@
+1)Definir una función filter que imprima los primos que existen en el rango de 1 a tope (i.e. range(1,tope+1)). La variable tope se obtiene de pantalla así: tope = int(input("¿Tope máximo? ")). De esta forma, la función de orden superior filter debe utilizar una función booleana llamada “esprimo(n)” la cual devuelve True si el n es primo y False en caso contrario. 
+
+
+
+2)Utilizar la noción de generador para crear una función gen_primos(N) que devuelva una lista con los primos hasta N. La función gen_primos utiliza la función booleana esprimo(i) para determinar si i es primo (True) o no (False).
+
+
+
+3)Programar Factorial Recursivo Cola (Tail) y comparar el tiempo de ejecución (elapsed time) para n=50 con el factorial sencillo presentado en clase.
+
+      # Calculo de Factorial cola de 50 =    
+
+      # 30414093201713375576366966406747986832057064836514787179557289984 
+
+      # Ejm. Factorial Cola de 50 Elapsed time: 0.0019876957 seconds.
+
+
+
+4)Programar Fibonacci Simple y Fibonacci Recursivo Cola comparando los tiempos de ejecución 
+
+       y analizar la ganancia en tiempo.
+
+5)El videojuego Dark Souls es tan famoso que hasta hoy en día se habla del Dark Souls de los Dark Souls, o comparar un juego nuevo en niveles de Dark Souls de dificultad.
+
+En el juego cada jugador tiene un inventario de elementos que puede cargar en su equipaje. Los elementos que puede cargar no deben superar un peso máximo definido en el juego(por ejemplo, 20Kg). Ejemplo de los elementos que existen son armas y accesorios.
+
+Un problema común en el juego(además de ser el Dark Souls de los Dark Souls) es que uno encuentra tantos elementos que no sabe cuales llevarse por tener un peso limitado de carga. Una solución es escoger un subconjunto de estos elementos cuya suma sea igual al peso máximo.
+
+El ejercicio consiste en dado un peso maximo, y una lista de pesos, mostrar cuales subconjuntos existen cuya suma de pesos sea igual al peso maximo.
+
+La solución debe implementarse utilizando recursión, no se pueden usar librerías con funciones externas o propias del lenguaje, debe hacer la función usted mismo.
+
+Además debe mostrar la lista de los subconjuntos en orden ascendente considerando los elementos de dicho subconjunto y cada subconjunto debe estar ordenado de manera ascendente.
+
+Un ejemplo es el siguiente:
+
+Peso = 5
+
+Pesos = [3,2,5]
+
+Los subconjuntos son los siguientes: [[3, 2, 5],[3, 2] [3 ,5],[2 ,5],[2],[3],[5]]
+
+Subconjuntos que cumplen con la suma: [[3,2],[5]]
+
+Subconjuntos mostrados de manera ascendente por su # de elementos y a cada subconjunto ordenado ascendentemente: [[5],[2,3]]

@@ -1,0 +1,87 @@
+Ejercicio 1:  
+El Taller MagiCar quiere gestionar y saber cierta información de la “base de datos” de los automóviles registrados en dicho taller. Dicha “base de datos” está suministrada en un CSV, así que se decide contratar a un estudiante de la Universidad Nacional de Colombia sede Medellín para realizar dicho trabajo. 
+
+Así que adelante, utiliza tus conocimientos de la carrera para ayudar a este taller:
+
+ATENCION: TODOS LOS EJEMPLOS MOSTRADOS EN CADA PUNTO SON ESO, UN EJEMPLO, DICHOS EJEMPLOS TIENEN ERRORES, ASI QUE NO SE BASE EN LOS MISMOS DATOS SUMINISTRADOS EN LOS EJEMPLOS PARA VALIDAR SI SU RESPUESTA ESTA BIEN, MINASLAP HACE ESTE TRABAJO Y PUEDE VERLO USTED MISMO
+
+Leer el CSV como un dataframe. Una vez obtenido el dataframe, debemos mostrarles los datos del automóvil en un formato específico, un ejemplo de dicho formato es el siguiente: 
+
+'La marca de tu automóvil es Renault Stepway de color Blanco y la placa es ABC999'
+
+Además debemos mostrar cuando se compro el automóvil, un ejemplo de dicho dato es: 
+
+'El automóvil de placa ABC999, fue comprado el Thursday, 12 de May de 2011 y tiene 10 años, 8 meses y 7 días'
+
+luego, debe mostrar todos los datos en una lista y que dicha lista sea retornada en la función llamada UNO que aparece en el formato de código visible en MinasLAP.  
+
+Un ejemplo de cómo debe quedar la lista es este es: 
+
+  ['La marca de tu automóvil es Renault Stepway de color Blanco y la placa es ABC999', 'El automovil de placa ABC999, fue comprado el Thursday, 12 de May de 2011 y tiene 10 años, 8 meses y 7 días', 'La marca de tu automovil es Chevrolet Onix de color Rojo y la placa es EFR789', 'El automóvil de placa EFR789, fue comprado el Tuesday, 03 de January de 2017 y tiene 5 años, 0 meses y 16 días']
+
+ (los días y meses salen en inglés debido al manejo de fechas que tiene MinasLAP, que solo el administrador puede hacer estas importaciones)*
+
+
+Ahora debemos indicar cuál es la siguiente fecha de:
+
+ * Alineación, la cual se hace cada año después de la alineación anterior. La Alineación solo se hace entre lunes y jueves. En caso de que el año se cumpla entre viernes y domingo, se toma la fecha del siguiente lunes, y así sucesivamente hasta mostrar 3 citas.
+
+ * Balanceo, la cual se hace cada 18 meses después del ultimo balanceo. El Balanceo solo se hace en semana, en caso de que los 18 meses se cumpla sábado o domingo, se toma la fecha del siguiente lunes, y así sucesivamente hasta mostrar 3 citas.
+
+ * Cambio de aceite, el cual se hace cada 9 meses del cambio de aceite anterior. El cambio de aceite solo lo hacen los fines de semana, en caso de que se cumplan los 9 meses durante la semana, se toma la fecha del siguiente sábado, y así sucesivamente hasta mostrar 3 citas.
+
+ * Prueba técnico-mecánica, la cual se hace cada año después de la prueba anterior anterior. La prueba técnico-mecánica solo se hace los viernes, en caso de que se cumpla el año durante otro día, se toma la fecha del viernes siguiente, y así sucesivamente hasta mostrar 3 citas. 
+
+ (En caso de que el automóvil ese año tenga menos de 6 años de comprado, se imprime:
+
+ ['la primera prueba tecnico-mecanica sera el:', 'Friday, 19 de June de 2026']
+
+La fecha inicial de técnico-mecánica será la misma fecha de compra mas 6 años, siempre y cuando se entienda que ocurre el viernes posterior si cae algún otro día, solo se imprimiría una cita, que seria la de la primera vez.)
+
+Como en el punto anterior, debe mostrar todos los datos en una lista y que dicha lista sea retornada en la función llamada DOS que aparece en el formato de código visible en MinasLAP.  
+
+Un ejemplo de cómo debe quedar la lista es este: 
+
+   ['La marca de tu automóvil es Renault Stepway de color Blanco y la placa es ABC999',
+    'La última fecha de alineación realizada fue el Tuesday, 02 de February de 2021',
+    'Las siguientes fechas de alineación programadas son:',
+    'Wednesday, 02 de February de 2022', 'Thursday, 02 de February de 2023', 'Monday, 05 de February de 2024',
+    'La última fecha de cambio de aceite realizada fue el Monday, 27 de December de 2021',
+    'Las siguientes fechas de cambio de aceite programadas son:',
+    'Saturday, 01 de October de 2022', 'Sunday, 02 de July de 2023','Saturday, 06 de April de 2024',
+    'La última fecha de balanceo realizada fue el Thursday, 21 de January de 2021', 
+    'Las siguientes fechas de balanceo programadas son:',
+     'Monday, 25 de July de 2022', 'Wednesday, 24 de January de 2024','Friday, 25 de July de 2025',
+    'La última fecha de tecnico-mecanica realizada fue el Friday, 12 de February de 2021',
+    'Las siguientes fechas de tecnico-mecanica programadas son:',
+    'Friday, 18 de February de 2022', 'Friday, 24 de February de 2023', 'Friday, 01 de March de 2024']
+
+Considerando que la vida útil promedio para un automóvil según su marca es:
+
+ * Renault es de 5 años.
+
+ * Chevrolet es de 5 años.
+
+ * Kia es de 7 años.
+
+ * Volkswagen es de 12 años.
+
+ * BMW es de 15 años.
+
+Si el automóvil todavía posee vida útil, muestre la vida útil del automóvil en días y años. 
+
+  'El automóvil de placa PPQ229, tiene una vida útil de 1396 días son 4.0 años aproximadamente'
+
+Si el automóvil ha superado su expectativa de vida útil, mostrar el mensaje correspondiente:
+
+  'El automóvil de placa ABC999 ha superado su vida útil de 5 años'
+
+Antes de mostrar la vida útil de cada automóvil, debe mostrar la marca, modelo, placa y color como se ha venido mostrando anteriormente. 
+
+como en el punto anterior, debe mostrar todos los datos en una lista y que dicha lista sea retornada en la función llamada TRES que aparece en el formato de código visible en minaslap, un ejemplo de cómo debe quedar la lista es este: 
+
+['La marca de tu automóvil es Renault Stepway de color Blanco y la placa es ABC999', 'El automóvil de placa ABC999 ha superado su vida útil de 5 años', 'La marca de tu automóvil es Kia Sportage de color Negro y la placa es PPQ229', 'El automóvil de placa PPQ229, tiene una vida útil de 1396 días son 4.0 años aproximadamente']
+
+
+Ejercicio 2:
+Como vimos en clase, hay varias maneras de generar números (for, yield, list comprehension, filter), lo que se les pide en este ejercicio es generar números cuadrados del 1 al 10000 con estos 4 métodos diferentes( 1,4,9,16,25,36,...), tomar los tiempos de cada uno y mostrar cuál es el más eficiente en términos de ese tiempo. En el código encontrara las funciones correspondientes de cada uno que debe llenar para validar si hizo el ejercicio bien.
