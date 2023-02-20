@@ -1,0 +1,31 @@
+1-Expresiones Regulares. 
+Dado el siguiente case class:
+case class Vehiculo(nombre: String, color: String, placa: String)
+
+Se le suministrara en el código una lista de objetos tipo vehiculo.
+
+Debe crear un código usando expresiones regulares y la lista de objetos tipo vehículo(en este caso llamada fuit) que me devuelva UNA LISTA con STRINGS de la siguiente manera:
+
+Si el vehículo es un carro: en la lista debe ir  "Es un Carro"
+
+Si el vehículo es una moto: en la lista debe ir  "Es una Moto"
+
+Si el vehículo no es ni moto ni carro: en la lista debe ir  "Placa no reconocida"
+
+EJEMPLO:
+
+Supongamos que tenemos esta lista:
+
+Vehículos(Vehiculo(“rayo mceen”,”rojo con rachos cuchau”,”XXX123”), Vehiculo(“Initial D”,”Negro con blanco”,”ABC98A”))
+
+SI el primer vehículo es un carro y el segundo es una moto, la lista debe retornarse así:
+
+List(Es un Carro,Es una Moto).
+
+ 
+
+LAS MAYUSCULAS DEBEN CONSIDERARSE EN LOS MENSAJES.
+
+EL ORDEN IMPORTA, ASI QUE DEBE SUMINISTRAR LOS DATOS EN EL ORDEN QUE ESTE LA LISTA Y CON EL MISMO SENTIDO DEL EJEMPLO ANTERIOR.
+
+SU RESULTADO DEBE UTILIZAR YIELD, Y DEBE RECORRER LA LISTA FRUT, NO LA LISTA DE PLACAS. SI NO UTILIZA YIELD Y RECORRE LA LISTA DE PLACAS, SU NOTA EN ESTE PUNTO SERA DE 0

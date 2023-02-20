@@ -1,0 +1,18 @@
+Desarrollar las siguientes funciones anónimas y asignarlas a las constantes
+
+(val) siguientes:
+
+1 – val mcd (máximo común divisor) de 3 números(BONUS:  tiene que ser de manera recursiva utilizando el algoritmo de Euclides). 
+
+2 – val celsius que convierte grados fahrenheit a celsius a. 
+
+3 – val millas que convierte kms en millas.(un kilometro equivale a 0.62137 millas)
+
+4 – val area_circulo: devuelve el area de un círculo a partir del radio. (use como valor de pi=3.1416)
+
+5 – Crear una funcion anónima para hacer una tasa de cambio (Euros A Pesos) Utilizando la siguiente conversion: 1 Euro = 4384.32 Pesos Colombianos
+
+(val). 
+
+6- En este mismo codigo ponga en comentario // 3 funciones anonimas creadas que sean interesantes y los ejemplos que utilizaron
+
